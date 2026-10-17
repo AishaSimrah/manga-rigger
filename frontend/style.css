@@ -1,0 +1,20 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #fafafa; color: #222; }
+header { padding: 12px 20px; background: #222; color: #fff; }
+header h1 { margin: 0; font-size: 1.2rem; }
+main { display: grid; grid-template-columns: 340px 1fr; gap: 20px; padding: 20px; }
+aside section { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 12px; margin-bottom: 14px; }
+aside h2 { margin: 0 0 8px; font-size: 1rem; }
+label { display: block; margin: 6px 0; font-size: 0.9rem; }
+input[type="range"], input[type="text"], input[type="file"] { width: 100%; }
+button { cursor: pointer; padding: 6px 10px; margin: 3px 3px 3px 0; }
+.part-btn.active { background: #222; color: #fff; }
+.hint { font-size: 0.8rem; color: #666; }
+audio { width: 100%; margin: 6px 0; }
+#char-list { list-style: none; padding: 0; margin: 8px 0 0; }
+#char-list li { display: flex; justify-content: space-between; }
+#char-list li button:first-child { flex: 1; text-align: left; }
+#stage { display: flex; flex-direction: column; align-items: center; }
+canvas { width: 100%; max-width: 540px; height: auto; border: 1px solid #ccc; background: #f4f4f4; touch-action: none; cursor: crosshair; }
+#status { font-size: 0.9rem; color: #444; }
+@media (max-width: 800px) { main { grid-template-columns: 1fr; } }
